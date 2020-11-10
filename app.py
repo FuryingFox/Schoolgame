@@ -6,21 +6,19 @@ import time
 app = Ursina()
 
 
-a = Audio('bruh', autoplay=True)
-printvar(a)
-
 
 player = FirstPersonController()
 
 ground = Entity(
     model = 'cube',
-    color = color.black,
+    color = color.gray,
     z = -.1,
     y = -1,
     origin_y = .5,
     scale = (100, 10, 100),
     collider = 'box',
     ignore = True,
+    texture = 'brick'
     )
 
 wall = Entity(
@@ -32,6 +30,7 @@ wall = Entity(
     scale = (100, 50, 0),
     collider = 'box',
     ignore = True,
+    texture = 'brick'
     )
 
 wall2 = Entity(
@@ -43,6 +42,7 @@ wall2 = Entity(
     scale = (100, 50, 0),
     collider = 'box',
     ignore = True,
+    texture = 'brick'
     )
 
 wall3 = Entity(
@@ -54,6 +54,7 @@ wall3 = Entity(
     scale = (0, 50, 100),
     collider = 'box',
     ignore = True,
+    texture = 'brick'
     )
 
 wall4 = Entity(
@@ -65,6 +66,7 @@ wall4 = Entity(
     scale = (0, 50, 100),
     collider = 'box',
     ignore = True,
+    texture = 'brick'
     )
 
 camera.fov = 90
